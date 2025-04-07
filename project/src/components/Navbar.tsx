@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X, TestTube2 } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -9,8 +9,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <TestTube2 className="h-8 w-8 text-blue-600" />
-            <span className="ml-2 text-xl font-semibold text-gray-900">Ayesha Clinical Lab</span>
+            <img src="/logo.png" alt="Logo" className="h-10 w-10 object-contain" />
+            <span className="ml-2 text-xl font-semibold text-gray-900">Aisha Clinical Lab</span>
           </div>
           
           {/* Desktop Menu */}
@@ -20,9 +20,6 @@ const Navbar = () => {
             <a href="#services" className="text-gray-700 hover:text-blue-600">Services</a>
             <a href="#book" className="text-gray-700 hover:text-blue-600">Book Appointment</a>
             <a href="#contact" className="text-gray-700 hover:text-blue-600">Contact</a>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-              Patient Portal
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -45,9 +42,6 @@ const Navbar = () => {
               <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Services</a>
               <a href="#book" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Book Appointment</a>
               <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Contact</a>
-              <button className="w-full mt-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-                Patient Portal
-              </button>
             </div>
           </div>
         )}
